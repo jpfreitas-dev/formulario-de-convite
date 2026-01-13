@@ -45,11 +45,29 @@
   --font-body: 'Open Sans', sans-serif;
 
   /* Typography */
-  --text-logo: 400 4rem/auto var(--font-logo);
-  --heading-md: 700 2.8rem/auto var(--font-headings);
-  --heading-sm: 700 1.8rem/auto var(--font-headings);
-  --text-md: 400 1.6rem/auto var(--font-body);
-  --text-sm: 400 1.4rem/auto var(--font-body);
-  --text-xs: 400 1.2rem/auto var(--font-body);
-  --text-md-bold: 600 1.6rem/auto var(--font-body);
+  --text-logo: 400 2.5rem/3.375rem var(--font-logo);
+  --heading-md: 700 1.75rem/1 var(--font-headings);
+  --heading-sm: 700 1.125rem/1 var(--font-headings);
+  --text-md: 400 1rem/1 var(--font-body);
+  --text-sm: 400 .875rem/1 var(--font-body);
+  --text-xs: 400 .75rem/1 var(--font-body);
+}
+
+body {
+  overflow: hidden;
+  background-color: var(--shape-background);
+  font: var(--text-body);
+  color: var(--text-body);
+  padding: 1.25rem; 
+  overflow: hidden;
+}
+
+h2,
+h3 {
+  color: var(--text-heading);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
