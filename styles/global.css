@@ -56,7 +56,7 @@
 body {
   overflow: hidden;
   background-color: var(--shape-background);
-  font: var(--text-body);
+  font: var(--text-sm);
   color: var(--text-body);
   padding: 1.25rem; 
   overflow: hidden;

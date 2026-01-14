@@ -2,19 +2,19 @@
   display: grid;
   grid-template-columns: 25rem 1fr;
   gap: 1.25rem;
+  height: 100vh;
 }
 
 aside {
   height: calc(100vh - 2.5rem);
-  
+
   & .aside-container {
-    border-radius: .75rem;
+    border-radius: 0.75rem;
     height: 100%;
     background: url(../assets/Background.png) center/cover;
     padding: 2rem;
 
-    & .title {
-
+    & header {
       & img {
         max-height: 3rem;
         margin-bottom: 1rem;
@@ -23,12 +23,31 @@ aside {
       & h1 {
         font: var(--text-logo);
         color: var(--pink);
-        margin-bottom: .25rem;
+        margin-bottom: 0.25rem;
       }
 
-      
+      & p {
+        font: var(--text-md)
+      }
     }
   }
 }
 
+main {
+  overflow: auto;
+  background-color: var(--shape-body);
+  border-radius: 0.75rem;
+  height: 100%;
+  padding: 5rem 8.125rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 
+  & .main-container {
+    min-width: 35rem;
+
+    & h2 {
+      font: var(--heading-md);
+    }
+  }
+}

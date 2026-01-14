@@ -1,0 +1,85 @@
+input,
+textarea {
+  margin-top: 0.75rem;
+  appearance: none;
+  width: 100%;
+  background-color: var(--input-base);
+  border-radius: 0.5rem;
+  border: 2px solid transparent;
+  outline: 1px solid var(--input-stroke);
+  color: var(--input-placeholder);
+  font: var(--text-md);
+  padding: 0.8125rem 1rem;
+}
+
+
+input:focus,
+textarea:focus,
+input[type="date"]:focus-within {
+  outline: 0.125rem solid var(--brand-light);
+  /* border-color: var(--stroke-highlight); */
+}
+
+input[type="date"] {
+  &::-webkit-calendar-picker-indicator {
+    opacity: 0;
+  }
+}
+
+
+.event-type {
+  margin-top: .75rem;
+  display: flex;
+  background-color: var(--input-base);
+  border-radius: 0.5rem;
+  border: 2px solid transparent;
+  outline: 1px solid var(--input-stroke);
+  padding: .25rem;
+  gap: .25rem;
+
+  & .event-type-option{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .75rem 1.125rem;
+    gap: .5rem;
+    flex: 1;
+    border-radius: .25rem;
+
+    position: relative;
+    & input,
+    & input:focus,
+    & input:hover{
+      all: unset;
+      position: absolute;
+      inset: 0;
+      cursor: pointer;
+    }
+    
+    
+    & img {
+      width: 1rem;
+      height: 1rem;
+    }
+    
+    &:hover {
+      background-color: var(--shape-hover);
+    }
+
+    &:has(input[id="in-person"]:checked) {
+      background-color: var(--shape-button);
+      color: var(--text-heading);
+      & img {
+        content: url(../../assets/building-checked.svg);
+      }
+    }
+    
+    &:has(input[id="online"]:checked) {
+      background-color: var(--shape-button);
+      color: var(--text-heading);
+      & img {
+        content: url(../../assets/video-checked.svg);
+      }
+    }
+  }
+}
