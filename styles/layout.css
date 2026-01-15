@@ -44,7 +44,7 @@ main {
   align-items: flex-start;
 
   & .main-container {
-    min-width: 35rem;
+    max-width: 35rem;
 
     & h2 {
       font: var(--heading-md);
