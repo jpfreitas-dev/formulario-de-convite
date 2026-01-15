@@ -236,7 +236,7 @@
             <div class="contact">
               <div class="input-wrapper">
                 <label for="name">Nome</label>
-                <input id="name" name="name" type="text" placeholder="Nome completo" required/>
+                <input id="name" name="name" type="text" placeholder="Nome completo" required />
                 <div class="error">
                   <img src="./assets/circle-alert.svg" alt="Ícone de alerta vermelho" />
                   <span>Campo obrigatório</span>
@@ -252,10 +252,29 @@
               </div>
             </div>
           </fieldset>
-          <div class="terms-wrapper"></div>
-        </form>
+          
+          <div class="terms-wrapper">
+            <div class="term-item">
+              <div class="checkbox-image"></div>
+              <input type="checkbox" name="terms" id="terms" />
+              <label for="term-1">Li e concordo com os <a href="#">Termos e Condições</a> e com a <a href="#">Política de
+                  Privacidade</a></label>
+            </div>
+            <div class="term-item">
+              <div class="checkbox-image"></div>
+              <input type="checkbox" name="terms" id="term-2" />
+              <label for="terms">Aceito receber atualizações e promoções por e-mail</label>
+            </div>
+            <div class="term-item">
+              <div class="checkbox-image"></div>
+              <input type="checkbox" name="terms" id="term-3" />
+              <label for="terms">Aceito receber atualizações e promoções por SMS</label>
+            </div>
+          </div>
       </div>
-    </main>
+      </form>
+  </div>
+  </main>
   </div>
 </body>
 
