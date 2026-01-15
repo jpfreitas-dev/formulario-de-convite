@@ -17,6 +17,7 @@ form {
 
       & img {
         width: 1.5rem;
+        margin-bottom:  .0625rem;
       }
     }
   }

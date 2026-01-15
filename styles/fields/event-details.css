@@ -24,6 +24,7 @@
     color: var(--input-placeholder);
     font: var(--text-md);
     padding: 0.8125rem 1rem;
+    max-height: 3rem;
   }
 
   & input:focus,

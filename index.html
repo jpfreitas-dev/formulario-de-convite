@@ -33,7 +33,7 @@
         <h2>Crie seu convite</h2>
 
         <form enctype="multipart/form-data" method="post">
-          <fieldset>
+          <fieldset> <!-- event details -->
             <legend>
               <img src="./assets/calendar.svg" alt="Ícone de calendário" />
               Sobre o evento
@@ -79,7 +79,7 @@
             </div>
           </fieldset>
 
-          <fieldset>
+          <fieldset> <!-- appearance -->
             <legend>
               <img src="./assets/paintbrush-vertical.svg" alt="Ícone de pincel" />
               Personalização
@@ -227,7 +227,31 @@
             </div>
           </fieldset>
 
-          <fieldset class="contact"></fieldset>
+          <fieldset> <!-- contact -->
+            <legend>
+              <img src="./assets/contact.svg" alt="Ícone de contatos" />
+              Dados para contatos
+            </legend>
+
+            <div class="contact">
+              <div class="input-wrapper">
+                <label for="name">Nome</label>
+                <input id="name" name="name" type="text" placeholder="Nome completo" required/>
+                <div class="error">
+                  <img src="./assets/circle-alert.svg" alt="Ícone de alerta vermelho" />
+                  <span>Campo obrigatório</span>
+                </div>
+              </div>
+              <div class="input-wrapper">
+                <label for="mail">E-mail</label>
+                <input id="mail" name="mail" type="email" placeholder="exemplo@email.com" />
+              </div>
+              <div class="input-wrapper">
+                <label for="number">Telefone</label>
+                <input id="number" name="number" type="text" placeholder="(99) 99999-9999" />
+              </div>
+            </div>
+          </fieldset>
           <div class="terms-wrapper"></div>
         </form>
       </div>
