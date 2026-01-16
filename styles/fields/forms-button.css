@@ -1,0 +1,23 @@
+.forms-button {
+  display: flex;
+  justify-content: flex-end;
+
+  & button {
+    padding: .8125rem 1.25rem;
+    background-color: var(--brand-dark);
+    border-radius: .5rem;
+    border: none;
+    display: flex;
+    align-items: center;
+    font: var(--text-md);
+    color: var(--text-heading);
+    gap: .75rem;
+    cursor: pointer;
+
+    & img {
+      max-width: 1.25rem;
+      max-height: 1.25rem;
+    }
+
+  }
+}
