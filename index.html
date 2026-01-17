@@ -42,26 +42,26 @@
             <div class="event-details">
               <div class="input-wrapper">
                 <label for="event-name">Título</label>
-                <input id="event-name" name="event-name" type="text" placeholder="Nome do evento" />
+                <input id="event-name" name="event-name" type="text" placeholder="Nome do evento" required/>
               </div>
               <div class="input-wrapper">
                 <label for="event-start">Início</label>
-                <input id="event-start" name="event-start" type="date" />
+                <input id="event-start" name="event-start" type="date" required/>
               </div>
               <div class="input-wrapper">
                 <label for="event-end">Fim</label>
-                <input id="event-end" name="event-end" type="date" />
+                <input id="event-end" name="event-end" type="date" required/>
               </div>
               <div class="input-wrapper">
                 <label>Tipo</label>
                 <div class="event-type">
                   <div class="event-type-option">
-                    <input id="in-person" name="event-type" type="radio" value="in-person" />
+                    <input id="in-person" name="event-type" type="radio" value="in-person" required/>
                     <img src="./assets/building-2.svg" alt="Ícone de prédio" />
                     <label for="in-person">Presencial</label>
                   </div>
                   <div class="event-type-option">
-                    <input id="online" name="event-type" type="radio" value="online" />
+                    <input id="online" name="event-type" type="radio" value="online" required/>
                     <img src="./assets/video.svg" alt="Ícone de vídeo" />
                     <label for="online">Online</label>
                   </div>
@@ -69,7 +69,7 @@
               </div>
               <div class="input-wrapper">
                 <label for="event-place">Local</label>
-                <input id="event-place" name="event-place" type="text" placeholder="Link ou endereço" />
+                <input id="event-place" name="event-place" type="text" placeholder="Link ou endereço" required/>
               </div>
               <div class="textarea-wrapper">
                 <label for="event-description">Descrição</label>

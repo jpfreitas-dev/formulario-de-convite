@@ -31,7 +31,6 @@
     color: var(--input-placeholder);
     font: var(--text-md);
     padding: 0.8125rem 1rem;
-    max-height: 3rem;
 
     &:user-invalid {
     border: 0.125rem solid var(--danger);
